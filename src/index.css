@@ -7,7 +7,57 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  background-color: rgb(37, 36, 36);
+  padding-top: 25px;
+  padding-bottom: 25px; 
+}
+
+h1 {
+  letter-spacing: 5px;
+  color: white;
+}
+
+.todo-app {
+  margin: 5em auto;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.input-todo {
+  margin: 1em 2em;
+}
+
+button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #e7e7e7; 
+  color: black;
+}
+
+li {
+  display: inline;
+  margin-right: 50px;
+}
+
+.button-li {
+  background-color: rgb(218, 56, 56);
+}
+
+hr {
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 200px;
+  padding: 0;
 }

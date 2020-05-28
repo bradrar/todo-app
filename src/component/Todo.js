@@ -27,16 +27,23 @@ export default function Todo() {
     }
 
     return (
-        <div>
-            <p> What needs to be done? </p>
+        <div className="todo-app">
+            <h2> What needs to be done? </h2>
                 <form onSubmit={addTodo}>
-                <input type="text" onChange={handleChange} value={item}/>
-                <button>Add #{list.length + 1}</button>
+                <input className="input-todo" type="text" onChange={handleChange} value={item}/>
+                <button className="btn-shine">
+                    <span>Add #{list.length + 1}</span>
+                </button>
                 </form>
-         
+
+             <hr/>   
+            
             <div> {list.map((val, id) =>
             <div key={id}>
-                    <li > {val} </li> <button onClick={() => handleFinished(val)}> finished </button>
+                <ul>
+                    <li > {val} </li> <button  className="button-li" onClick={() => handleFinished(val)}> finished </button>
+                </ul>
+                   
             </div>
                 
                 )} 

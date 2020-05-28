@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Header() {
     return (
-        <div>
-            <h1> Header only </h1>
+        <div className="header">
+            <h1> TODO APP </h1>
         </div>
     )
 }
